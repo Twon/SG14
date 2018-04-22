@@ -83,7 +83,6 @@ before_script:
   - mkdir build
   - cd build
   - echo "${CC}"
-  - gwhere "${CC}"
   - cmake -D CMAKE_C_COMPILER=${CC} -D CMAKE_CXX_COMPILER=${CXX} ../cmake/CMakeLists.txt
 
 script: make && make test
